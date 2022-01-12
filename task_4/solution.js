@@ -10,8 +10,10 @@ function parseProducts(json) {
     
     let data = JSON.parse(json);
     let products = data.products; 
+    
+    return parseProducts(products);
 }
-return parseProducts(products);
+
 
 // Напишите функцию renderProductsCards(json)
 // Аргументом функции является JSON
@@ -26,10 +28,10 @@ function renderProductsCards(json) {
     clearProducts();
     
     let products = parseProducts(json);
-    length = products.length;
+    let length = products.length;
     
     for(let i = 0; i < length; i += 1) {
-        addProducts(products[i]);
+        addProduct(products[i]);
     }
 
 }
