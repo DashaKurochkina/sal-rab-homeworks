@@ -11,7 +11,7 @@ function parseProducts(json) {
     let products = data.products;     
 }
 
-return parseProducts(products);
+//return parseProducts(products);
 
 // Напишите функцию renderProductsCards(json)
 // Аргументом функции является JSON
