@@ -10,8 +10,10 @@ function parseProducts(json) {
 
     let data = JSON.parse(json);
     let products = data.products; 
-    return products;
+    //return products;
 }
+
+return parseProducts(products);
 
 // Напишите функцию renderProductsCards(json)
 // Аргументом функции является JSON
